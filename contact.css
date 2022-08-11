@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: gray ;
+    font-size: 14px;
+}
+.container{
+    width: 80%;
+    margin: 50px, auto;
+    padding-bottom: 30px;
+}
+.contactBox{
+    background: whitesmoke;
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3) ;
+}
+.contactBox:hover{
+    box-shadow: 0 0 40px 0px rgba(172, 172, 172, 0.4);
+    transition: 0.5s;
+}
+.contactLeft{
+    flex-basis: 60%;
+    padding: 40px 60px;
+
+}
+.contactRight{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #f44336;
+
+}
+h1{
+    margin-bottom:10px;
+    color: whitesmoke;
+    border-radius: 3px;
+
+}
+.container p{
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 40px;
+    color: whitesmoke;
+    font-size: 15px;
+}
+.inputRow{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.inputRow .inputGroup{
+    flex-basis: 45% ;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #f44336;
+}
+button{
+    background:#f44336;
+    color: whitesmoke;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3) ;
+}
+.contactLeft h3{
+    color: #f44336;
+    font-weight: 600;
+    margin-bottom: 30px ;
+}
+.contactRight h3{
+    color: whitesmoke;
+    font-weight: 600;
+    margin-bottom: 30px ;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover{
+    text-decoration: underline;
+}
+input:hover{
+    cursor: pointer;
+}
+@media(max-width:820px){
+    .contactBox{
+        flex-direction: column;
+    }
+    .contactRight a{
+        font-size: 12px;
+    }
+    tr td a{
+        padding-right: 20px;
+    }
+    
+}
+@media(max-width:400px){
+    .contactBox{
+        flex-direction: column;
+    }
+    .contactRight a{
+        font-size: 9px;
+    }
+}

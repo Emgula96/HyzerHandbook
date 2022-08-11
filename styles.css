@@ -1,0 +1,129 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(176,147,147,1) 100%);
+    background-repeat:no-repeat;
+}
+
+h1 {
+    color: whitesmoke;
+    background-color: #f44336;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#discList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    padding-bottom: 250px;
+}
+.myBagDiscs {
+    margin: 0;
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    padding-bottom: 450px;
+}
+.emptySign{
+    background-color: transparent;
+    padding-bottom: 200px
+}
+
+.disc {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.disc:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.9);
+    transition: 0.5s;
+    height: 100%;
+}
+
+.disc h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.disc h3 {
+    grid-area: brand;
+    text-align: left;
+    font-weight: 400;
+}
+.disc h4{text-align: left;}
+
+.disc img {
+    max-width: 90%;
+    margin-inline: auto;
+}
+.disc button{
+    margin: 10px;
+    border-radius: 10px;
+    width: 90%;
+}
+.disc button:hover{
+    background-color:#f44336;
+    color: whitesmoke;
+    transition: .5s;
+}
+
+span{
+    font-size: 20px;
+}
+
+#searchBar {
+    width: 30%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+    padding: 20px;
+    background-color: #f44336;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+#searchWrapper p{
+    font-size: medium;
+    font-weight: 600;
+}
+
+#searchWrapper:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+    transition: 0.5s;
+}
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
